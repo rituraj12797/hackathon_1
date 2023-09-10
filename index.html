@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="banner">
+                <div class="role"></div>
+            </div>
+            <div class="toolkit">
+                <div class="text_toolkit">All the AI utilities at one place</div>
+                <div class="utility_container">
+                    
+                    <button class="plag option">
+                        <div>Plagiarism check</div>
+                        <div><i class="fa-regular fa-lightbulb icon" style="font-size: 30px;"></i></div>
+                    </button>
+                    <button class="Summarizer option">
+                        <div>Summarizer</div>
+                        <div><i class="fa-solid fa-align-justify icon" style="font-size: 30px;"></i></div>
+                    </button>
+                    <button class="content option">
+                        <div>Text Expansion</div>
+                        <div><i class="fa-regular fa-message icon" style="font-size: 30px;"></i></div>
+                    </button>
+                    <button class="url_shortner option">
+                        <div>URL shortner</div>
+                        <div><i class="fa-solid fa-link icon" style="font-size: 30px;"></i></div>
+                    </button>
+                    <button class="rephraser option">
+                        <div>Rephrase</div>
+                        <div><i class="fa-solid fa-quote-left icon" style="font-size: 30px;"></i></div>
+                    </button>
+                </div>
+                <div class="input_output_box">
+                  <div class="display_for_pti displays">
+                    <textarea class="input"  placeholder="enter your text here"></textarea>
+                    <button class="generate" >Generate</button>
+                
+                    <div class="output">
+                        <div class="loader">
+                          <div class="one dot"></div>
+                          <div class="two dot"></div>
+                          <div class="three dot"></div>
+                        </div>
+                        <div class="textholder">
+
+                        </div>
+                    </div>
+                  </div>
+                   
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <script src="./logic.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    
+    <script>
+        var typeData = new Typed(".role", {
+            strings: [
+
+
+                "Error correction",
+                "Text extender",
+                "Rephraser",
+                "Text summariser",
+                "Plagiarism check",
+                "URL shortner"
+            ],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1000,
+        });
+    </script>
+</body>
+
+</html>
